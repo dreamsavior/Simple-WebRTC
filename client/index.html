@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="webrtc.js"></script>
+    <style>
+      .flex {
+        display:flex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex">
+      <div>
+        <h3>Local video</h3>
+        <video id="localVideo" autoplay muted style="width:40%;"></video>
+      </div>
+      <div>
+        <h3>Remote video</h3>
+        <video id="remoteVideo" autoplay style="width:40%;"></video>
+      </div>
+    </div>
+
+    <input type="button" id="start" onclick="start(true)" value="Start video call"></input>
+
+    <script type="text/javascript">
+        pageReady();
+    </script>
+  </body>
+</html>
